@@ -67,7 +67,7 @@ juce_add_console_app(hpf_host_test PRODUCT_NAME "hpf_host_test")
 target_sources(hpf_host_test PRIVATE tests/test_host.cpp)
 target_compile_definitions(hpf_host_test PRIVATE
     JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0 JUCE_PLUGINHOST_VST3=1 JUCE_PLUGINHOST_AU=0 JUCE_MODAL_LOOPS_PERMITTED=1
-    HPF_TEST_VST3="$<TARGET_PROPERTY:HPFRecommender_VST3,JUCE_PLUGIN_ARTEFACT_FILE>")
+    HPF_TEST_VST3="$<TARGET_GENEX_EVAL:HPFRecommender_VST3,$<TARGET_PROPERTY:HPFRecommender_VST3,JUCE_PLUGIN_ARTEFACT_FILE>>")
 target_link_libraries(hpf_host_test
     PRIVATE hpf juce::juce_audio_processors juce::juce_events
     PUBLIC juce::juce_recommended_config_flags juce::juce_recommended_warning_flags)
