@@ -1,0 +1,102 @@
+# Builds and tests the core and the HPF! plugin on macOS, Windows and Linux. A tag v* also publishes
+# the three packages in a GitHub release.
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  JUCE_TAG: 9.0.6
+
+jobs:
+  python:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r python/requirements.txt pytest
+      - run: python -m pytest -q tests
+        working-directory: python
+
+  plugin:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-14
+            name: macOS
+            cmake: '"-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64" -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0'
+            tests: '.*'
+          - os: windows-2022
+            name: Windows
+            cmake: ''
+            tests: 'highpass|analyser|unit'
+          - os: ubuntu-22.04
+            name: Linux
+            cmake: ''
+            tests: 'highpass|analyser|unit'
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Linux dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libasound2-dev libjack-jackd2-dev libfontconfig1-dev libfreetype-dev \
+            libx11-dev libxcomposite-dev libxcursor-dev libxext-dev libxinerama-dev libxrandr-dev \
+            libxrender-dev libxi-dev libegl-dev libglu1-mesa-dev mesa-common-dev
+      - name: JUCE
+        run: git clone --depth 1 --branch ${{ env.JUCE_TAG }} https://github.com/juce-framework/JUCE.git ../JUCE
+      - name: Configure
+        shell: bash
+        run: cmake -S plugin -B build -DCMAKE_BUILD_TYPE=Release -DJUCE_DIR="$GITHUB_WORKSPACE/../JUCE" -DHPF_COPY_PLUGIN=OFF ${{ matrix.cmake }}
+      - name: Build
+        run: cmake --build build --config Release --parallel 4
+      - name: Test
+        working-directory: build
+        run: ctest -C Release --output-on-failure -R "${{ matrix.tests }}"
+      - name: Package
+        shell: bash
+        run: |
+          art="build/HPFRecommender_artefacts/Release"
+          pkg="HPF-${GITHUB_REF_NAME#v}-${{ matrix.name }}"
+          [[ "$GITHUB_REF_TYPE" == tag ]] || pkg="HPF-dev-${{ matrix.name }}"
+          mkdir -p "dist/$pkg"
+          cp -R "$art/VST3/HPF!.vst3" "dist/$pkg/"
+          if [[ "$RUNNER_OS" == macOS ]]; then cp -R "$art/AU/HPF!.component" "dist/$pkg/"; fi
+          if [[ "$RUNNER_OS" == macOS ]]; then cp -R "$art/Standalone/HPF!.app" "dist/$pkg/"; fi
+          if [[ "$RUNNER_OS" == Windows ]]; then cp "$art/Standalone/HPF!.exe" "dist/$pkg/"; fi
+          if [[ "$RUNNER_OS" == Linux ]]; then cp "$art/Standalone/HPF!" "dist/$pkg/"; fi
+          cp plugin/LICENSE.md plugin/INSTALL.md "dist/$pkg/"
+          cd dist
+          if [[ "$RUNNER_OS" == Windows ]]; then 7z a "$pkg.zip" "$pkg" > /dev/null; else zip -qry "$pkg.zip" "$pkg"; fi
+          echo "PKG=dist/$pkg.zip" >> "$GITHUB_ENV"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HPF-${{ matrix.name }}
+          path: ${{ env.PKG }}
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [python, plugin]
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/*.zip --title "HPF! $GITHUB_REF_NAME" --notes-file plugin/INSTALL.md

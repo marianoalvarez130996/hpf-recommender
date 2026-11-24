@@ -1,0 +1,2742 @@
+{
+ "dataset": "idmt",
+ "items": [
+  {
+   "name": "001",
+   "low_midi": 31,
+   "low_max_dur_s": 0.602,
+   "truth": 48.999429497718666,
+   "budget": 1.0,
+   "duration_s": 16.7,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -4.0,
+    "k2": -6.0,
+    "k3": -1.8
+   },
+   "peak_70_140": {
+    "hz": 97.57,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 41.3,
+    "f0_min": 41.3,
+    "active": true,
+    "f0_yin": 41.629869478728295,
+    "recomendador": {
+     "fc": 31.5,
+     "order": 3,
+     "loss": 0.299559163607755,
+     "ratio": 0.8057404669552762,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 31.5,
+     "order": 3,
+     "loss": 0.299559163607755,
+     "ratio": 0.8057404669552762,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 31.5,
+     "order": 3,
+     "loss": 0.299559163607755,
+     "ratio": 0.8057404669552762,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 33.30389558298264,
+     "order": 4,
+     "loss": 0.19342354651670413,
+     "ratio": 0.8047429454281756,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.11889994108142446,
+     "ratio": 0.5721966399417368,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 48.8,
+    "f0_min": 48.8,
+    "active": true,
+    "f0_yin": 29.115040248960064,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 8,
+     "loss": 0.169064677748564,
+     "ratio": 0.8884793428311234,
+     "removed": 16.036157246416902
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 8,
+     "loss": 0.169064677748564,
+     "ratio": 0.8884793428311234,
+     "removed": 16.036157246416902
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 8,
+     "loss": 0.169064677748564,
+     "ratio": 0.8884793428311234,
+     "removed": 16.036157246416902
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": 8.594170778224486
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": 18.901126119432213
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": 25.299972070358763
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 23.29203219916805,
+     "order": 4,
+     "loss": 0.011307060129860672,
+     "ratio": 0.5628200025508161,
+     "removed": 2.9644740519794484
+    },
+    "solo_borde": {
+     "fc": 35.5,
+     "order": 2,
+     "loss": 1.0568644932535551,
+     "ratio": 1.0156490358965826,
+     "removed": 7.081151623485466
+    },
+    "f_r": 22.37005619844098,
+    "r_db": -11.238407591851617,
+    "hum": true
+   }
+  },
+  {
+   "name": "002",
+   "low_midi": 31,
+   "low_max_dur_s": 0.314,
+   "truth": 48.999429497718666,
+   "budget": 1.0,
+   "duration_s": 19.2,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -5.7,
+    "k2": -8.8,
+    "k3": -5.6
+   },
+   "peak_70_140": {
+    "hz": 130.55,
+    "db_re_max": -2.8
+   },
+   "original": {
+    "source": "f0",
+    "keep": 49.0,
+    "f0_min": 49.0,
+    "active": true,
+    "f0_yin": 48.98975101090101,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 0.7850854123880385,
+     "ratio": 0.9669982809321419,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 0.7850854123880385,
+     "ratio": 0.9669982809321419,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 0.7850854123880385,
+     "ratio": 0.9669982809321419,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 39.191800808720814,
+     "order": 4,
+     "loss": 0.672595798379733,
+     "ratio": 0.9470160972868308,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.11889994108142446,
+     "ratio": 0.5721966399417368,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 49.0,
+    "f0_min": 49.0,
+    "active": true,
+    "f0_yin": 48.9900154400525,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.5396157704190501,
+     "ratio": 0.93479063998945,
+     "removed": 17.493903122352805
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.5396157704190501,
+     "ratio": 0.93479063998945,
+     "removed": 17.493903122352805
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.5396157704190501,
+     "ratio": 0.93479063998945,
+     "removed": 17.493903122352805
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": 10.370397101985
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": 20.92754386264755
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": 27.293021691735472
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 39.192012352042006,
+     "order": 4,
+     "loss": 0.6726227050057183,
+     "ratio": 0.9470212089409602,
+     "removed": 15.39201906852636
+    },
+    "solo_borde": {
+     "fc": 25.0,
+     "order": 2,
+     "loss": 0.284750780825967,
+     "ratio": 0.715245799927171,
+     "removed": 4.622571066511087
+    },
+    "f_r": 19.778848842526642,
+    "r_db": -19.702600658858533,
+    "hum": false
+   }
+  },
+  {
+   "name": "003",
+   "low_midi": 36,
+   "low_max_dur_s": 0.353,
+   "truth": 65.40639132514966,
+   "budget": 1.0,
+   "duration_s": 20.87,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": 1.1,
+    "k2": 0.8,
+    "k3": 1.7
+   },
+   "peak_70_140": {
+    "hz": 131.22,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 65.4,
+    "f0_min": 65.4,
+    "active": true,
+    "f0_yin": 41.48914548748913,
+    "recomendador": {
+     "fc": 56.0,
+     "order": 5,
+     "loss": 0.8342088073360373,
+     "ratio": 0.9800912506361157,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 56.0,
+     "order": 5,
+     "loss": 0.8342088073360373,
+     "ratio": 0.9800912506361157,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 56.0,
+     "order": 5,
+     "loss": 0.8342088073360373,
+     "ratio": 0.9800912506361157,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.5685957402759024,
+     "ratio": 0.8573262749897627,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 5.102900541911785,
+     "ratio": 1.7146525499795253,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 10.90976235848853,
+     "ratio": 2.571978824969288,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 33.19131638999131,
+     "order": 4,
+     "loss": 0.019057476768702158,
+     "ratio": 0.6008380864395341,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.037803498595179286,
+     "ratio": 0.42866313749488133,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 65.4,
+    "f0_min": 65.4,
+    "active": true,
+    "f0_yin": 65.43977720574023,
+    "recomendador": {
+     "fc": 56.0,
+     "order": 5,
+     "loss": 0.8342088073360373,
+     "ratio": 0.9800912506361157,
+     "removed": 18.928276182514153
+    },
+    "recomendador_borde_1dB": {
+     "fc": 56.0,
+     "order": 5,
+     "loss": 0.8342088073360373,
+     "ratio": 0.9800912506361157,
+     "removed": 18.928276182514153
+    },
+    "recomendador_borde_3dB": {
+     "fc": 56.0,
+     "order": 5,
+     "loss": 0.8342088073360373,
+     "ratio": 0.9800912506361157,
+     "removed": 18.928276182514153
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.5685957402759024,
+     "ratio": 0.8573262749897627,
+     "removed": 6.8838243660037275
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 5.102900541911785,
+     "ratio": 1.7146525499795253,
+     "removed": 16.774542453842482
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 10.90976235848853,
+     "ratio": 2.571978824969288,
+     "removed": 23.133955243149043
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 52.35182176459219,
+     "order": 4,
+     "loss": 0.6761328587331938,
+     "ratio": 0.9476866792829652,
+     "removed": 15.914323111185322
+    },
+    "solo_borde": {
+     "fc": 35.5,
+     "order": 2,
+     "loss": 0.36142676595666323,
+     "ratio": 0.7608770690534143,
+     "removed": 5.520208105659908
+    },
+    "f_r": 25.87130265456411,
+    "r_db": -24.22795031139156,
+    "hum": true
+   }
+  },
+  {
+   "name": "004",
+   "low_midi": 28,
+   "low_max_dur_s": 0.261,
+   "truth": 41.20344461410875,
+   "budget": 1.0,
+   "duration_s": 16.7,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -7.9,
+    "k2": -7.3,
+    "k3": -5.1
+   },
+   "peak_70_140": {
+    "hz": 97.57,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 41.1,
+    "f0_min": 41.1,
+    "active": true,
+    "f0_yin": 41.07609089216706,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.7604568739750053,
+     "ratio": 1.360920630798727,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 11.821588967714455,
+     "ratio": 2.721841261597454,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 18.62985930758085,
+     "ratio": 4.082761892396181,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 32.86087271373365,
+     "order": 4,
+     "loss": 0.6582920041673266,
+     "ratio": 0.9442755269198705,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.2346312303239573,
+     "ratio": 0.6804603153993635,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 41.1,
+    "f0_min": 41.1,
+    "active": true,
+    "f0_yin": 41.080044837460264,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": 21.129290351374166
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": 21.129290351374166
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": 21.129290351374166
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.7604568739750053,
+     "ratio": 1.360920630798727,
+     "removed": 14.29255248950856
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 11.821588967714455,
+     "ratio": 2.721841261597454,
+     "removed": 25.127389654853157
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 18.62985930758085,
+     "ratio": 4.082761892396181,
+     "removed": 31.450942519471905
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 32.86403586996821,
+     "order": 4,
+     "loss": 0.6587625197275461,
+     "ratio": 0.9443664219805751,
+     "removed": 17.513757680079447
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.2346312303239573,
+     "ratio": 0.6804603153993635,
+     "removed": 5.0530165399493665
+    },
+    "f_r": 15.136776245531085,
+    "r_db": -31.584794985706708,
+    "hum": false
+   }
+  },
+  {
+   "name": "005",
+   "low_midi": 31,
+   "low_max_dur_s": 0.291,
+   "truth": 48.999429497718666,
+   "budget": 1.0,
+   "duration_s": 18.64,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -2.4,
+    "k2": 0.3,
+    "k3": 0.6
+   },
+   "peak_70_140": {
+    "hz": 97.57,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 49.0,
+    "f0_min": 49.0,
+    "active": true,
+    "f0_yin": 48.97477770510435,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.5899522485816013,
+     "ratio": 0.9080567167273749,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.5899522485816013,
+     "ratio": 0.9080567167273749,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.5899522485816013,
+     "ratio": 0.9080567167273749,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 39.17982216408348,
+     "order": 4,
+     "loss": 0.6710735963238588,
+     "ratio": 0.946726649773291,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.11889994108142446,
+     "ratio": 0.5721966399417368,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 49.0,
+    "f0_min": 49.0,
+    "active": true,
+    "f0_yin": 48.98121643007937,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 6,
+     "loss": 0.367974865437189,
+     "ratio": 0.91391707320054,
+     "removed": 16.340856885714647
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 6,
+     "loss": 0.367974865437189,
+     "ratio": 0.91391707320054,
+     "removed": 16.340856885714647
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 6,
+     "loss": 0.367974865437189,
+     "ratio": 0.91391707320054,
+     "removed": 16.340856885714647
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": 9.637899762759748
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": 19.94984120719754
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": 26.250436289880437
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 39.1849731440635,
+     "order": 4,
+     "loss": 0.6717278301100095,
+     "ratio": 0.9468511161376125,
+     "removed": 13.843390163245331
+    },
+    "solo_borde": {
+     "fc": 35.5,
+     "order": 2,
+     "loss": 1.0568644932535551,
+     "ratio": 1.0156490358965826,
+     "removed": 8.068458312150305
+    },
+    "f_r": 20.685347073556745,
+    "r_db": -13.743061554927499,
+    "hum": true
+   }
+  },
+  {
+   "name": "006",
+   "low_midi": 31,
+   "low_max_dur_s": 0.692,
+   "truth": 48.999429497718666,
+   "budget": 1.0,
+   "duration_s": 14.77,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -3.9,
+    "k2": -2.1,
+    "k3": -0.6
+   },
+   "peak_70_140": {
+    "hz": 96.9,
+    "db_re_max": -1.5
+   },
+   "original": {
+    "source": "f0",
+    "keep": 48.9,
+    "f0_min": 48.9,
+    "active": true,
+    "f0_yin": 36.73094521747758,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.5899522485816013,
+     "ratio": 0.9080567167273749,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.5899522485816013,
+     "ratio": 0.9080567167273749,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.5899522485816013,
+     "ratio": 0.9080567167273749,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 29.38475617398207,
+     "order": 4,
+     "loss": 0.07204858315903057,
+     "ratio": 0.7100423184794677,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.11889994108142446,
+     "ratio": 0.5721966399417368,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 48.9,
+    "f0_min": 48.9,
+    "active": true,
+    "f0_yin": 29.16687361599416,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 6,
+     "loss": 0.367974865437189,
+     "ratio": 0.91391707320054,
+     "removed": 16.782049099692
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 6,
+     "loss": 0.367974865437189,
+     "ratio": 0.91391707320054,
+     "removed": 16.782049099692
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 6,
+     "loss": 0.367974865437189,
+     "ratio": 0.91391707320054,
+     "removed": 16.782049099692
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": 9.767492283261427
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": 20.092491017685678
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": 26.39803118706444
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 23.33349889279533,
+     "order": 4,
+     "loss": 0.01146889261268928,
+     "ratio": 0.5638219883120205,
+     "removed": 4.098340926915469
+    },
+    "solo_borde": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": 9.767492283261427
+    },
+    "f_r": 20.547537220598798,
+    "r_db": -12.049952068071494,
+    "hum": false
+   }
+  },
+  {
+   "name": "007",
+   "low_midi": 29,
+   "low_max_dur_s": 0.474,
+   "truth": 43.653528929125486,
+   "budget": 1.0,
+   "duration_s": 20.21,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": 0.8,
+    "k2": -1.1,
+    "k3": -0.4
+   },
+   "peak_70_140": {
+    "hz": 131.22,
+    "db_re_max": -9.7
+   },
+   "original": {
+    "source": "f0",
+    "keep": 43.7,
+    "f0_min": 43.7,
+    "active": true,
+    "f0_yin": 41.469374078022206,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 4,
+     "loss": 0.768565000150567,
+     "ratio": 0.9639976764460043,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 4,
+     "loss": 0.768565000150567,
+     "ratio": 0.9639976764460043,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 4,
+     "loss": 0.768565000150567,
+     "ratio": 0.9639976764460043,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.317133920984113,
+     "ratio": 1.2845380250094853,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 10.891739494279468,
+     "ratio": 2.5690760500189707,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 17.64187380915637,
+     "ratio": 3.853614075028456,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 33.175499262417766,
+     "order": 4,
+     "loss": 0.45820270092235116,
+     "ratio": 0.8998109528865557,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.187253755083244,
+     "ratio": 0.6422690125047427,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 43.7,
+    "f0_min": 43.7,
+    "active": true,
+    "f0_yin": 43.68312825470492,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.5257339589280601,
+     "ratio": 0.9317568382778306,
+     "removed": 18.548619930741605
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.5257339589280601,
+     "ratio": 0.9317568382778306,
+     "removed": 18.548619930741605
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.5257339589280601,
+     "ratio": 0.9317568382778306,
+     "removed": 18.548619930741605
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.317133920984113,
+     "ratio": 1.2845380250094853,
+     "removed": 12.746347250372033
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 10.891739494279468,
+     "ratio": 2.5690760500189707,
+     "removed": 23.431117866867
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 17.64187380915637,
+     "ratio": 3.853614075028456,
+     "removed": 29.752586659694376
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 34.94650260376394,
+     "order": 4,
+     "loss": 0.6769724233280455,
+     "ratio": 0.9478454433862123,
+     "removed": 16.436428164058444
+    },
+    "solo_borde": {
+     "fc": 31.5,
+     "order": 2,
+     "loss": 1.0418724073352712,
+     "ratio": 1.0115736946949696,
+     "removed": 9.340187589373572
+    },
+    "f_r": 16.613071469047455,
+    "r_db": -12.1345320938632,
+    "hum": true
+   }
+  },
+  {
+   "name": "008",
+   "low_midi": 31,
+   "low_max_dur_s": 0.462,
+   "truth": 48.999429497718666,
+   "budget": 1.0,
+   "duration_s": 29.54,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -3.9,
+    "k2": -1.9,
+    "k3": 0.2
+   },
+   "peak_70_140": {
+    "hz": 97.57,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 49.0,
+    "f0_min": 49.0,
+    "active": true,
+    "f0_yin": 48.97417998691018,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 0.7850854123880385,
+     "ratio": 0.9669982809321419,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 0.7850854123880385,
+     "ratio": 0.9669982809321419,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 0.7850854123880385,
+     "ratio": 0.9669982809321419,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 39.17934398952815,
+     "order": 4,
+     "loss": 0.6710128881848486,
+     "ratio": 0.9467150953411937,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.11889994108142446,
+     "ratio": 0.5721966399417368,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 49.0,
+    "f0_min": 49.0,
+    "active": true,
+    "f0_yin": 48.975009507854324,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.5396157704190501,
+     "ratio": 0.93479063998945,
+     "removed": 16.850708112500676
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.5396157704190501,
+     "ratio": 0.93479063998945,
+     "removed": 16.850708112500676
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.5396157704190501,
+     "ratio": 0.93479063998945,
+     "removed": 16.850708112500676
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.5959576047574857,
+     "ratio": 1.1443932798834735,
+     "removed": 10.170635990631114
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.087808708254556,
+     "ratio": 2.288786559766947,
+     "removed": 20.661727244007395
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 15.678693495468536,
+     "ratio": 3.4331798396504203,
+     "removed": 27.027211358652345
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 39.18000760628346,
+     "order": 4,
+     "loss": 0.6710971408829102,
+     "ratio": 0.9467311307296358,
+     "removed": 14.844476665325564
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.11889994108142446,
+     "ratio": 0.5721966399417368,
+     "removed": 2.7060540012799716
+    },
+    "f_r": 20.179222311467065,
+    "r_db": -19.58634085536504,
+    "hum": false
+   }
+  },
+  {
+   "name": "009",
+   "low_midi": 33,
+   "low_max_dur_s": 0.494,
+   "truth": 55.0,
+   "budget": 1.0,
+   "duration_s": 15.36,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -2.8,
+    "k2": -3.7,
+    "k3": -1.4
+   },
+   "peak_70_140": {
+    "hz": 111.03,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 41.7,
+    "f0_min": 41.7,
+    "active": true,
+    "f0_yin": 55.12560710307575,
+    "recomendador": {
+     "fc": 31.5,
+     "order": 3,
+     "loss": 0.1519598687726684,
+     "ratio": 0.7175624901333122,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 31.5,
+     "order": 3,
+     "loss": 0.1519598687726684,
+     "ratio": 0.7175624901333122,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 31.5,
+     "order": 3,
+     "loss": 0.1519598687726684,
+     "ratio": 0.7175624901333122,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.0712931615668555,
+     "ratio": 1.0195385060966051,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 7.384790614958638,
+     "ratio": 2.0390770121932102,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 13.740284557177011,
+     "ratio": 3.058615518289815,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 44.1004856824606,
+     "order": 4,
+     "loss": 0.6850570807688536,
+     "ratio": 0.9493663811506591,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.07528077133328172,
+     "ratio": 0.5097692530483026,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 55.1,
+    "f0_min": 55.1,
+    "active": true,
+    "f0_yin": 27.93748593359026,
+    "recomendador": {
+     "fc": 50.0,
+     "order": 7,
+     "loss": 1.016499972225706,
+     "ratio": 1.001312279849117,
+     "removed": 18.2522649248016
+    },
+    "recomendador_borde_1dB": {
+     "fc": 50.0,
+     "order": 7,
+     "loss": 1.016499972225706,
+     "ratio": 1.001312279849117,
+     "removed": 18.2522649248016
+    },
+    "recomendador_borde_3dB": {
+     "fc": 50.0,
+     "order": 7,
+     "loss": 1.016499972225706,
+     "ratio": 1.001312279849117,
+     "removed": 18.2522649248016
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.0712931615668555,
+     "ratio": 1.0195385060966051,
+     "removed": 7.379784071913608
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 7.384790614958638,
+     "ratio": 2.0390770121932102,
+     "removed": 17.325523281267397
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 13.740284557177011,
+     "ratio": 3.058615518289815,
+     "removed": 23.65503099033432
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 22.34998874687221,
+     "order": 4,
+     "loss": 0.0032280470300519353,
+     "ratio": 0.48113592417452355,
+     "removed": 1.708837651540651
+    },
+    "solo_borde": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.0712931615668555,
+     "ratio": 1.0195385060966051,
+     "removed": 7.379784071913608
+    },
+    "f_r": 24.689374605400392,
+    "r_db": -11.640101279102119,
+    "hum": false
+   }
+  },
+  {
+   "name": "010",
+   "low_midi": 30,
+   "low_max_dur_s": 0.439,
+   "truth": 46.2493028389543,
+   "budget": 1.0,
+   "duration_s": 26.48,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -7.4,
+    "k2": -4.5,
+    "k3": -3.8
+   },
+   "peak_70_140": {
+    "hz": 73.35,
+    "db_re_max": -1.8
+   },
+   "original": {
+    "source": "f0",
+    "keep": 46.3,
+    "f0_min": 46.3,
+    "active": true,
+    "f0_yin": 46.304451332553946,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.8134534065608678,
+     "ratio": 0.9624064472219849,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.8134534065608678,
+     "ratio": 0.9624064472219849,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 3,
+     "loss": 0.8134534065608678,
+     "ratio": 0.9624064472219849,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.929922360281554,
+     "ratio": 1.212442445469328,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.9792755908772,
+     "ratio": 2.424884890938656,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 16.65782562241986,
+     "ratio": 3.6373273364079837,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 37.04356106604316,
+     "order": 4,
+     "loss": 0.6795539864034952,
+     "ratio": 0.9483326531505599,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.14927882599111844,
+     "ratio": 0.606221222734664,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 46.3,
+    "f0_min": 46.3,
+    "active": true,
+    "f0_yin": 31.341764063403126,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.9190894732044629,
+     "ratio": 0.9905947398038775,
+     "removed": 12.928191666875367
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.9190894732044629,
+     "ratio": 0.9905947398038775,
+     "removed": 12.928191666875367
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 5,
+     "loss": 0.9190894732044629,
+     "ratio": 0.9905947398038775,
+     "removed": 12.928191666875367
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.929922360281554,
+     "ratio": 1.212442445469328,
+     "removed": 7.8600070642412625
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 9.9792755908772,
+     "ratio": 2.424884890938656,
+     "removed": 18.037239389326846
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 16.65782562241986,
+     "ratio": 3.6373273364079837,
+     "removed": 24.409061351087956
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 25.0734112507225,
+     "order": 4,
+     "loss": 0.03228752844849493,
+     "ratio": 0.6418911662553243,
+     "removed": 3.033729046807014
+    },
+    "solo_borde": {
+     "fc": 31.5,
+     "order": 2,
+     "loss": 0.8464407494580488,
+     "ratio": 0.9547984258070957,
+     "removed": 5.067328858413679
+    },
+    "f_r": 23.667189219080154,
+    "r_db": -22.362762220728058,
+    "hum": false
+   }
+  },
+  {
+   "name": "011",
+   "low_midi": 35,
+   "low_max_dur_s": 0.764,
+   "truth": 61.7354126570155,
+   "budget": 1.0,
+   "duration_s": 24.46,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -1.1,
+    "k2": 0.4,
+    "k3": 0.8
+   },
+   "peak_70_140": {
+    "hz": 123.82,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 58.4,
+    "f0_min": 58.4,
+    "active": true,
+    "f0_yin": 57.885151488561455,
+    "recomendador": {
+     "fc": 45.0,
+     "order": 3,
+     "loss": 0.607476199247133,
+     "ratio": 0.9131141777779259,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 45.0,
+     "order": 3,
+     "loss": 0.607476199247133,
+     "ratio": 0.9131141777779259,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 45.0,
+     "order": 3,
+     "loss": 0.607476199247133,
+     "ratio": 0.9131141777779259,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.7049565346057896,
+     "ratio": 0.9083055481761823,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 5.8204373963048575,
+     "ratio": 1.8166110963523645,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 11.83991915145948,
+     "ratio": 2.724916644528547,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 46.308121190849164,
+     "order": 4,
+     "loss": 0.4148209032779352,
+     "ratio": 0.8881288364590914,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.04757577938910064,
+     "ratio": 0.4541527740880911,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 58.0,
+    "f0_min": 58.0,
+    "active": true,
+    "f0_yin": 57.85577061015249,
+    "recomendador": {
+     "fc": 45.0,
+     "order": 4,
+     "loss": 0.33353350846405444,
+     "ratio": 0.863104446761634,
+     "removed": 7.494215878778397
+    },
+    "recomendador_borde_1dB": {
+     "fc": 45.0,
+     "order": 4,
+     "loss": 0.33353350846405444,
+     "ratio": 0.863104446761634,
+     "removed": 7.494215878778397
+    },
+    "recomendador_borde_3dB": {
+     "fc": 45.0,
+     "order": 4,
+     "loss": 0.33353350846405444,
+     "ratio": 0.863104446761634,
+     "removed": 7.494215878778397
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.7049565346057896,
+     "ratio": 0.9083055481761823,
+     "removed": 4.405756991056016
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 5.8204373963048575,
+     "ratio": 1.8166110963523645,
+     "removed": 13.249793457094087
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 11.83991915145948,
+     "ratio": 2.724916644528547,
+     "removed": 19.485907151961246
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 46.284616488122,
+     "order": 4,
+     "loss": 0.4132169894856429,
+     "ratio": 0.8876780471861178,
+     "removed": 8.0218803903627
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.04757577938910064,
+     "ratio": 0.4541527740880911,
+     "removed": 0.6261006440268096
+    },
+    "f_r": 32.543319189139574,
+    "r_db": -30.403063954356405,
+    "hum": false
+   }
+  },
+  {
+   "name": "012",
+   "low_midi": 29,
+   "low_max_dur_s": 0.167,
+   "truth": 43.653528929125486,
+   "budget": 1.0,
+   "duration_s": 21.33,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -4.8,
+    "k2": -5.6,
+    "k3": -2.4
+   },
+   "peak_70_140": {
+    "hz": 97.57,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 42.5,
+    "f0_min": 42.5,
+    "active": true,
+    "f0_yin": 43.63481292378853,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 4,
+     "loss": 0.768565000150567,
+     "ratio": 0.9639976764460043,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 4,
+     "loss": 0.768565000150567,
+     "ratio": 0.9639976764460043,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 4,
+     "loss": 0.768565000150567,
+     "ratio": 0.9639976764460043,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.317133920984113,
+     "ratio": 1.2845380250094853,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 10.891739494279468,
+     "ratio": 2.5690760500189707,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 17.64187380915637,
+     "ratio": 3.853614075028456,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 34.90785033903082,
+     "order": 4,
+     "loss": 0.6714437768077586,
+     "ratio": 0.9467970874628961,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.187253755083244,
+     "ratio": 0.6422690125047427,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 43.7,
+    "f0_min": 43.7,
+    "active": true,
+    "f0_yin": 43.6797180295284,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.5257339589280601,
+     "ratio": 0.9317568382778306,
+     "removed": 19.863671525053597
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.5257339589280601,
+     "ratio": 0.9317568382778306,
+     "removed": 19.863671525053597
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.5257339589280601,
+     "ratio": 0.9317568382778306,
+     "removed": 19.863671525053597
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.317133920984113,
+     "ratio": 1.2845380250094853,
+     "removed": 13.776817845537877
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 10.891739494279468,
+     "ratio": 2.5690760500189707,
+     "removed": 24.521741701886942
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 17.64187380915637,
+     "ratio": 3.853614075028456,
+     "removed": 30.815721044536602
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 34.94377442362272,
+     "order": 4,
+     "loss": 0.6765810221065358,
+     "ratio": 0.9477714476234629,
+     "removed": 17.81219545039487
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.187253755083244,
+     "ratio": 0.6422690125047427,
+     "removed": 4.783052010672218
+    },
+    "f_r": 15.635477509765098,
+    "r_db": -22.494609896468234,
+    "hum": false
+   }
+  },
+  {
+   "name": "013",
+   "low_midi": 29,
+   "low_max_dur_s": 0.135,
+   "truth": 43.653528929125486,
+   "budget": 1.0,
+   "duration_s": 17.3,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -0.7,
+    "k2": -1.8,
+    "k3": 0.0
+   },
+   "peak_70_140": {
+    "hz": 130.55,
+    "db_re_max": -3.6
+   },
+   "original": {
+    "source": "f0",
+    "keep": 48.9,
+    "f0_min": 48.9,
+    "active": true,
+    "f0_yin": 41.31282320865839,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 1.7605366673841223,
+     "ratio": 1.0861945650095823,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 1.7605366673841223,
+     "ratio": 1.0861945650095823,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 1.7605366673841223,
+     "ratio": 1.0861945650095823,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.317133920984113,
+     "ratio": 1.2845380250094853,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 10.891739494279468,
+     "ratio": 2.5690760500189707,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 17.64187380915637,
+     "ratio": 3.853614075028456,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 33.050258566926715,
+     "order": 4,
+     "loss": 0.4452224541819867,
+     "ratio": 0.8964140801324012,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.187253755083244,
+     "ratio": 0.6422690125047427,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 48.9,
+    "f0_min": 48.9,
+    "active": true,
+    "f0_yin": 48.95286404361032,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 1.7605366673841223,
+     "ratio": 1.0861945650095823,
+     "removed": 12.503171713286356
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 1.7605366673841223,
+     "ratio": 1.0861945650095823,
+     "removed": 12.503171713286356
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 4,
+     "loss": 1.7605366673841223,
+     "ratio": 1.0861945650095823,
+     "removed": 12.503171713286356
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.317133920984113,
+     "ratio": 1.2845380250094853,
+     "removed": 8.349699821282533
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 10.891739494279468,
+     "ratio": 2.5690760500189707,
+     "removed": 18.551641659703975
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 17.64187380915637,
+     "ratio": 3.853614075028456,
+     "removed": 24.89485383188885
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 39.16229123488826,
+     "order": 4,
+     "loss": 1.5215251343305223,
+     "ratio": 1.0621892473885104,
+     "removed": 11.823950555177873
+    },
+    "solo_borde": {
+     "fc": 25.0,
+     "order": 2,
+     "loss": 0.4437035200665431,
+     "ratio": 0.8028362656309284,
+     "removed": 3.349087581823893
+    },
+    "f_r": 22.519370631682367,
+    "r_db": -22.791513139458942,
+    "hum": true
+   }
+  },
+  {
+   "name": "014",
+   "low_midi": 34,
+   "low_max_dur_s": 0.191,
+   "truth": 58.27047018976124,
+   "budget": 1.0,
+   "duration_s": 24.46,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -2.4,
+    "k2": 0.5,
+    "k3": 0.1
+   },
+   "peak_70_140": {
+    "hz": 129.87,
+    "db_re_max": -6.3
+   },
+   "original": {
+    "source": "f0",
+    "keep": 58.2,
+    "f0_min": 58.2,
+    "active": true,
+    "f0_yin": 41.300889828384136,
+    "recomendador": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.8717172084875755,
+     "ratio": 0.9625415815792013,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.8717172084875755,
+     "ratio": 0.9625415815792013,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.8717172084875755,
+     "ratio": 0.9625415815792013,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.870880846515244,
+     "ratio": 0.9623162066944537,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 6.582747472560459,
+     "ratio": 1.9246324133889074,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 12.784299763903086,
+     "ratio": 2.8869486200833614,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 33.04071186270731,
+     "order": 4,
+     "loss": 0.04616163370608574,
+     "ratio": 0.6713577995211,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 25.0,
+     "order": 2,
+     "loss": 0.1447087290499725,
+     "ratio": 0.6014476291840336,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 58.2,
+    "f0_min": 58.2,
+    "active": true,
+    "f0_yin": 33.69604229419999,
+    "recomendador": {
+     "fc": 50.0,
+     "order": 7,
+     "loss": 0.4825372200012443,
+     "ratio": 0.9450757805048373,
+     "removed": 10.649848436104381
+    },
+    "recomendador_borde_1dB": {
+     "fc": 50.0,
+     "order": 7,
+     "loss": 0.4825372200012443,
+     "ratio": 0.9450757805048373,
+     "removed": 10.649848436104381
+    },
+    "recomendador_borde_3dB": {
+     "fc": 50.0,
+     "order": 7,
+     "loss": 0.4825372200012443,
+     "ratio": 0.9450757805048373,
+     "removed": 10.649848436104381
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.870880846515244,
+     "ratio": 0.9623162066944537,
+     "removed": 4.0304668993523665
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 6.582747472560459,
+     "ratio": 1.9246324133889074,
+     "removed": 12.647384209096588
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 12.784299763903086,
+     "ratio": 2.8869486200833614,
+     "removed": 18.842020678661207
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 26.956833835359994,
+     "order": 4,
+     "loss": 0.00910106155879422,
+     "ratio": 0.547738823575102,
+     "removed": 0.9021705763684863
+    },
+    "solo_borde": {
+     "fc": 50.0,
+     "order": 2,
+     "loss": 1.8811482924518717,
+     "ratio": 1.2028952583680672,
+     "removed": 6.336086313267533
+    },
+    "f_r": 33.87299706673604,
+    "r_db": -12.086633785428669,
+    "hum": false
+   }
+  },
+  {
+   "name": "015",
+   "low_midi": 28,
+   "low_max_dur_s": 0.241,
+   "truth": 41.20344461410875,
+   "budget": 1.0,
+   "duration_s": 20.0,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": 2.6,
+    "k2": 3.4,
+    "k3": 1.6
+   },
+   "peak_70_140": {
+    "hz": 123.14,
+    "db_re_max": 0.0
+   },
+   "original": {
+    "source": "f0",
+    "keep": 41.2,
+    "f0_min": 41.2,
+    "active": true,
+    "f0_yin": 41.20960050737013,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 5,
+     "loss": 0.896130910788263,
+     "ratio": 0.9877134240642944,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.7604568739750053,
+     "ratio": 1.360920630798727,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 11.821588967714455,
+     "ratio": 2.721841261597454,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 18.62985930758085,
+     "ratio": 4.082761892396181,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 32.96768040589611,
+     "order": 4,
+     "loss": 0.6743272500480495,
+     "ratio": 0.9473447055955072,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.2346312303239573,
+     "ratio": 0.6804603153993635,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 41.2,
+    "f0_min": 41.2,
+    "active": true,
+    "f0_yin": 41.21242958450486,
+    "recomendador": {
+     "fc": 35.5,
+     "order": 6,
+     "loss": 0.6852475551731576,
+     "ratio": 0.9654762650100426,
+     "removed": 14.019667675577656
+    },
+    "recomendador_borde_1dB": {
+     "fc": 35.5,
+     "order": 6,
+     "loss": 0.6852475551731576,
+     "ratio": 0.9654762650100426,
+     "removed": 14.019667675577656
+    },
+    "recomendador_borde_3dB": {
+     "fc": 35.5,
+     "order": 6,
+     "loss": 0.6852475551731576,
+     "ratio": 0.9654762650100426,
+     "removed": 14.019667675577656
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 2.7604568739750053,
+     "ratio": 1.360920630798727,
+     "removed": 9.670534382381513
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 11.821588967714455,
+     "ratio": 2.721841261597454,
+     "removed": 20.09932865441691
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 18.62985930758085,
+     "ratio": 4.082761892396181,
+     "removed": 26.45604760976542
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 32.96994366760389,
+     "order": 4,
+     "loss": 0.674670344811978,
+     "ratio": 0.9474097416844842,
+     "removed": 10.227990195847575
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.2346312303239573,
+     "ratio": 0.6804603153993635,
+     "removed": 2.454388491256834
+    },
+    "f_r": 20.694341683229208,
+    "r_db": -15.799913448305569,
+    "hum": false
+   }
+  },
+  {
+   "name": "016",
+   "low_midi": 32,
+   "low_max_dur_s": 0.429,
+   "truth": 51.91308719749314,
+   "budget": 1.0,
+   "duration_s": 19.2,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": 0.2,
+    "k2": -2.2,
+    "k3": 7.9
+   },
+   "peak_70_140": {
+    "hz": 103.63,
+    "db_re_max": -5.6
+   },
+   "original": {
+    "source": "f0",
+    "keep": 52.0,
+    "f0_min": 52.0,
+    "active": true,
+    "f0_yin": 41.40235443021253,
+    "recomendador": {
+     "fc": 45.0,
+     "order": 5,
+     "loss": 0.9346711570986584,
+     "ratio": 0.9924776601378908,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 45.0,
+     "order": 5,
+     "loss": 0.9346711570986584,
+     "ratio": 0.9924776601378908,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 45.0,
+     "order": 5,
+     "loss": 0.9346711570986584,
+     "ratio": 0.9924776601378908,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.3113034588224388,
+     "ratio": 1.0801634204875625,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 8.221455006965336,
+     "ratio": 2.160326840975125,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 14.705685434146258,
+     "ratio": 3.2404902614626874,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 33.121883544170025,
+     "order": 4,
+     "loss": 0.11765052247766285,
+     "ratio": 0.7554249680645938,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.09463602152433642,
+     "ratio": 0.5400817102437813,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 52.0,
+    "f0_min": 52.0,
+    "active": true,
+    "f0_yin": 29.735878044194397,
+    "recomendador": {
+     "fc": 45.0,
+     "order": 5,
+     "loss": 0.9346711570986584,
+     "ratio": 0.9924776601378908,
+     "removed": 9.28396569662541
+    },
+    "recomendador_borde_1dB": {
+     "fc": 45.0,
+     "order": 5,
+     "loss": 0.9346711570986584,
+     "ratio": 0.9924776601378908,
+     "removed": 9.28396569662541
+    },
+    "recomendador_borde_3dB": {
+     "fc": 45.0,
+     "order": 5,
+     "loss": 0.9346711570986584,
+     "ratio": 0.9924776601378908,
+     "removed": 9.28396569662541
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 1.3113034588224388,
+     "ratio": 1.0801634204875625,
+     "removed": 5.008041145433601
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 8.221455006965336,
+     "ratio": 2.160326840975125,
+     "removed": 14.111450779149447
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 14.705685434146258,
+     "ratio": 3.2404902614626874,
+     "removed": 20.375318800352417
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 23.788702435355518,
+     "order": 4,
+     "loss": 0.008435554670298155,
+     "ratio": 0.5425591136313767,
+     "removed": 0.8399540309739884
+    },
+    "solo_borde": {
+     "fc": 20.0,
+     "order": 2,
+     "loss": 0.09463602152433642,
+     "ratio": 0.5400817102437813,
+     "removed": 0.7914597306016448
+    },
+    "f_r": 30.419846442775462,
+    "r_db": -19.191926050446035,
+    "hum": true
+   }
+  },
+  {
+   "name": "017",
+   "low_midi": 36,
+   "low_max_dur_s": 0.8,
+   "truth": 65.40639132514966,
+   "budget": 1.0,
+   "duration_s": 26.76,
+   "sr": 44100,
+   "tuning_cents": {
+    "k1": -4.8,
+    "k2": -4.8,
+    "k3": -0.6
+   },
+   "peak_70_140": {
+    "hz": 97.57,
+    "db_re_max": -3.3
+   },
+   "original": {
+    "source": "f0",
+    "keep": 41.3,
+    "f0_min": 41.3,
+    "active": true,
+    "f0_yin": 32.676341966269185,
+    "recomendador": {
+     "fc": 20.0,
+     "order": 1,
+     "loss": 0.388526647068319,
+     "ratio": 0.6010397226189045,
+     "removed": null
+    },
+    "recomendador_borde_1dB": {
+     "fc": 20.0,
+     "order": 1,
+     "loss": 0.388526647068319,
+     "ratio": 0.6010397226189045,
+     "removed": null
+    },
+    "recomendador_borde_3dB": {
+     "fc": 20.0,
+     "order": 1,
+     "loss": 0.388526647068319,
+     "ratio": 0.6010397226189045,
+     "removed": null
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.5685957402759024,
+     "ratio": 0.8573262749897627,
+     "removed": null
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 5.102900541911785,
+     "ratio": 1.7146525499795253,
+     "removed": null
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 10.90976235848853,
+     "ratio": 2.571978824969288,
+     "removed": null
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": null
+    },
+    "margen_yin": {
+     "fc": 26.141073573015348,
+     "order": 4,
+     "loss": 0.0028266290639701987,
+     "ratio": 0.4732127053515074,
+     "removed": null
+    },
+    "solo_borde": {
+     "fc": 22.4,
+     "order": 2,
+     "loss": 0.05933697528233818,
+     "ratio": 0.48010271399426707,
+     "removed": null
+    }
+   },
+   "contaminado": {
+    "source": "f0",
+    "keep": 65.4,
+    "f0_min": 65.4,
+    "active": true,
+    "f0_yin": 32.67619695295709,
+    "recomendador": {
+     "fc": 50.0,
+     "order": 3,
+     "loss": 0.7905939423097321,
+     "ratio": 0.9575929469117289,
+     "removed": 18.60815945921027
+    },
+    "recomendador_borde_1dB": {
+     "fc": 50.0,
+     "order": 3,
+     "loss": 0.7905939423097321,
+     "ratio": 0.9575929469117289,
+     "removed": 18.60815945921027
+    },
+    "recomendador_borde_3dB": {
+     "fc": 50.0,
+     "order": 3,
+     "loss": 0.7905939423097321,
+     "ratio": 0.9575929469117289,
+     "removed": 18.60815945921027
+    },
+    "fijo_40": {
+     "fc": 40.0,
+     "order": 2,
+     "loss": 0.5685957402759024,
+     "ratio": 0.8573262749897627,
+     "removed": 10.495020647292872
+    },
+    "fijo_80": {
+     "fc": 80.0,
+     "order": 2,
+     "loss": 5.102900541911785,
+     "ratio": 1.7146525499795253,
+     "removed": 21.007532133244954
+    },
+    "fijo_120": {
+     "fc": 120.0,
+     "order": 2,
+     "loss": 10.90976235848853,
+     "ratio": 2.571978824969288,
+     "removed": 27.352265297637732
+    },
+    "regla_100": {
+     "fc": null,
+     "order": 0,
+     "loss": 0.0,
+     "ratio": 0.0,
+     "removed": 0.0
+    },
+    "margen_yin": {
+     "fc": 26.140957562365674,
+     "order": 4,
+     "loss": 0.002826528744510988,
+     "ratio": 0.47321060529569947,
+     "removed": 6.722202468859835
+    },
+    "solo_borde": {
+     "fc": 35.5,
+     "order": 2,
+     "loss": 0.36142676595666323,
+     "ratio": 0.7608770690534143,
+     "removed": 8.861203711120119
+    },
+    "f_r": 19.43783710935354,
+    "r_db": -18.403448984325273,
+    "hum": true
+   }
+  }
+ ]
+}

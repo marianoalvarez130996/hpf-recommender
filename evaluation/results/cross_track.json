@@ -1,0 +1,190 @@
+{
+ "within": {
+  "HH_03": {
+   "body_hz": 5000,
+   "onsets": 555,
+   "bands": [
+    {
+     "band_hz": 40,
+     "r_body": 0.32,
+     "onset_share": 0.681
+    },
+    {
+     "band_hz": 50,
+     "r_body": 0.463,
+     "onset_share": 0.753
+    },
+    {
+     "band_hz": 63,
+     "r_body": 0.454,
+     "onset_share": 0.618
+    },
+    {
+     "band_hz": 80,
+     "r_body": 0.456,
+     "onset_share": 0.681
+    },
+    {
+     "band_hz": 100,
+     "r_body": 0.569,
+     "onset_share": 0.746
+    },
+    {
+     "band_hz": 125,
+     "r_body": 0.597,
+     "onset_share": 0.751
+    },
+    {
+     "band_hz": 160,
+     "r_body": 0.492,
+     "onset_share": 0.805
+    },
+    {
+     "band_hz": 200,
+     "r_body": 0.592,
+     "onset_share": 0.84
+    },
+    {
+     "band_hz": 250,
+     "r_body": 0.673,
+     "onset_share": 0.834
+    }
+   ]
+  },
+  "BASS COUNTRYMAN_01": {
+   "body_hz": 80,
+   "onsets": 615,
+   "bands": [
+    {
+     "band_hz": 40,
+     "r_body": 0.239,
+     "onset_share": 0.348
+    },
+    {
+     "band_hz": 50,
+     "r_body": 0.249,
+     "onset_share": 0.527
+    },
+    {
+     "band_hz": 63,
+     "r_body": 0.412,
+     "onset_share": 0.554
+    },
+    {
+     "band_hz": 125,
+     "r_body": 0.368,
+     "onset_share": 0.449
+    },
+    {
+     "band_hz": 160,
+     "r_body": 0.604,
+     "onset_share": 0.563
+    },
+    {
+     "band_hz": 200,
+     "r_body": 0.391,
+     "onset_share": 0.506
+    },
+    {
+     "band_hz": 250,
+     "r_body": 0.389,
+     "onset_share": 0.47
+    }
+   ]
+  }
+ },
+ "cross": {
+  "TOM 2_01 | TOM 3_01": [
+   {
+    "band_hz": 63,
+    "r": 0.644,
+    "level_b_minus_a_db": 33.7
+   },
+   {
+    "band_hz": 80,
+    "r": 0.813,
+    "level_b_minus_a_db": 26.5
+   },
+   {
+    "band_hz": 100,
+    "r": 0.633,
+    "level_b_minus_a_db": 25.1
+   },
+   {
+    "band_hz": 125,
+    "r": 0.766,
+    "level_b_minus_a_db": 22.5
+   },
+   {
+    "band_hz": 160,
+    "r": 0.732,
+    "level_b_minus_a_db": 22.7
+   },
+   {
+    "band_hz": 200,
+    "r": 0.817,
+    "level_b_minus_a_db": 11.2
+   },
+   {
+    "band_hz": 250,
+    "r": 0.843,
+    "level_b_minus_a_db": 11.4
+   }
+  ],
+  "SNR UP_01 | SNR DWN_01": [
+   {
+    "band_hz": 100,
+    "r": 0.92,
+    "level_b_minus_a_db": 12.9
+   },
+   {
+    "band_hz": 125,
+    "r": 0.927,
+    "level_b_minus_a_db": 10.9
+   },
+   {
+    "band_hz": 160,
+    "r": 0.949,
+    "level_b_minus_a_db": 7.6
+   },
+   {
+    "band_hz": 200,
+    "r": 0.923,
+    "level_b_minus_a_db": 5.8
+   },
+   {
+    "band_hz": 250,
+    "r": 0.916,
+    "level_b_minus_a_db": 5.7
+   },
+   {
+    "band_hz": 315,
+    "r": 0.923,
+    "level_b_minus_a_db": 2.5
+   }
+  ],
+  "GTR LINE_01 | others (max over 40-315 Hz)": {
+   "BASS 421_Medios_01": 0.266,
+   "BASS 57A_01": 0.302,
+   "BASS COUNTRYMAN_01": 0.261,
+   "BASS OKTAVA_medioschido_01": 0.267,
+   "GTR 57_01": 0.729,
+   "GTR OKTAVA_01": 0.544,
+   "GTR TLM170_01 L": 0.62,
+   "GTR TLM170_01 R": 0.62,
+   "GTRE906_01": 0.596,
+   "HH_03": 0.171,
+   "OH_01.L": 0.183,
+   "OH_01.R": 0.187,
+   "ROOM_01": 0.184,
+   "SAX SM55_02.L": 0.245,
+   "SAX SM55_02.R": 0.245,
+   "SAX SM57_02.L": 0.245,
+   "SAX SM57_02.R": 0.245,
+   "SNR DWN_01": 0.188,
+   "SNR UP_01": 0.181,
+   "TOM 2_01": 0.065,
+   "TOM 3_01": 0.084
+  }
+ }
+}

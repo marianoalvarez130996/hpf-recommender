@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.16)
+project(hpf_recommender CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+if(NOT CMAKE_BUILD_TYPE)
+  set(CMAKE_BUILD_TYPE Release)
+endif()
+
+option(HPF_SANITIZE "AddressSanitizer + UBSan" OFF)
+if(MSVC)
+  add_compile_options(/W4)
+else()
+  add_compile_options(-Wall -Wextra -Wpedantic -Wshadow -Wconversion -Wno-sign-conversion)
+  if(HPF_SANITIZE)
+    add_compile_options(-fsanitize=address,undefined -fno-omit-frame-pointer)
+    add_link_options(-fsanitize=address,undefined)
+  endif()
+endif()
+
+add_library(hpf src/dsp.cpp src/analysis.cpp src/pitch.cpp src/design.cpp src/recommender.cpp src/wav.cpp)
+target_include_directories(hpf PUBLIC include PRIVATE src)
+
+add_executable(hpf_recommend tools/hpf_recommend.cpp)
+target_link_libraries(hpf_recommend PRIVATE hpf)
+
+enable_testing()
+add_executable(hpf_tests tests/test_main.cpp)
+target_include_directories(hpf_tests PRIVATE src)
+target_link_libraries(hpf_tests PRIVATE hpf)
+add_test(NAME unit COMMAND hpf_tests)

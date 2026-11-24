@@ -1,0 +1,494 @@
+{
+ "manifest": {
+  "trials_per_comparison": 1,
+  "comparisons": [
+   {
+    "track": "BASS 57A_01",
+    "type": "con altura",
+    "condition": "corte",
+    "a": "BASS 57A_01__original.wav",
+    "b": "BASS 57A_01__corte.wav",
+    "cutoff_hz": 20,
+    "order": 1,
+    "keep_hz": 41.5,
+    "active": false,
+    "loss_at_keep_db": 0.91,
+    "start_s": 80
+   },
+   {
+    "track": "BASS 57A_01",
+    "type": "con altura",
+    "condition": "octava_arriba",
+    "a": "BASS 57A_01__original.wav",
+    "b": "BASS 57A_01__octava_arriba.wav",
+    "cutoff_hz": 40,
+    "order": 1,
+    "keep_hz": 41.5,
+    "active": false,
+    "loss_at_keep_db": 2.85,
+    "start_s": 80
+   },
+   {
+    "track": "BASS OKTAVA_medioschido_01",
+    "type": "con altura",
+    "condition": "corte",
+    "a": "BASS OKTAVA_medioschido_01__original.wav",
+    "b": "BASS OKTAVA_medioschido_01__corte.wav",
+    "cutoff_hz": 20,
+    "order": 1,
+    "keep_hz": 41.5,
+    "active": false,
+    "loss_at_keep_db": 0.91,
+    "start_s": 108
+   },
+   {
+    "track": "BASS OKTAVA_medioschido_01",
+    "type": "con altura",
+    "condition": "octava_arriba",
+    "a": "BASS OKTAVA_medioschido_01__original.wav",
+    "b": "BASS OKTAVA_medioschido_01__octava_arriba.wav",
+    "cutoff_hz": 40,
+    "order": 1,
+    "keep_hz": 41.5,
+    "active": false,
+    "loss_at_keep_db": 2.85,
+    "start_s": 108
+   },
+   {
+    "track": "GTR TLM170_01 L",
+    "type": "con altura",
+    "condition": "corte",
+    "a": "GTR TLM170_01 L__original.wav",
+    "b": "GTR TLM170_01 L__corte.wav",
+    "cutoff_hz": 40,
+    "order": 1,
+    "keep_hz": 81.3,
+    "active": false,
+    "loss_at_keep_db": 0.94,
+    "start_s": 53
+   },
+   {
+    "track": "GTR TLM170_01 L",
+    "type": "con altura",
+    "condition": "octava_arriba",
+    "a": "GTR TLM170_01 L__original.wav",
+    "b": "GTR TLM170_01 L__octava_arriba.wav",
+    "cutoff_hz": 80,
+    "order": 1,
+    "keep_hz": 81.3,
+    "active": false,
+    "loss_at_keep_db": 2.94,
+    "start_s": 53
+   },
+   {
+    "track": "GTR LINE_01",
+    "type": "con altura",
+    "condition": "corte",
+    "a": "GTR LINE_01__original.wav",
+    "b": "GTR LINE_01__corte.wav",
+    "cutoff_hz": 40,
+    "order": 1,
+    "keep_hz": 81.7,
+    "active": true,
+    "loss_at_keep_db": 0.93,
+    "start_s": 53
+   },
+   {
+    "track": "GTR LINE_01",
+    "type": "con altura",
+    "condition": "octava_arriba",
+    "a": "GTR LINE_01__original.wav",
+    "b": "GTR LINE_01__octava_arriba.wav",
+    "cutoff_hz": 80,
+    "order": 1,
+    "keep_hz": 81.7,
+    "active": true,
+    "loss_at_keep_db": 2.92,
+    "start_s": 53
+   },
+   {
+    "track": "SAX SM55_02.L",
+    "type": "con altura",
+    "condition": "corte",
+    "a": "SAX SM55_02.L__original.wav",
+    "b": "SAX SM55_02.L__corte.wav",
+    "cutoff_hz": 63,
+    "order": 1,
+    "keep_hz": 138.6,
+    "active": false,
+    "loss_at_keep_db": 0.82,
+    "start_s": 195
+   },
+   {
+    "track": "SAX SM55_02.L",
+    "type": "con altura",
+    "condition": "octava_arriba",
+    "a": "SAX SM55_02.L__original.wav",
+    "b": "SAX SM55_02.L__octava_arriba.wav",
+    "cutoff_hz": 126,
+    "order": 1,
+    "keep_hz": 138.6,
+    "active": false,
+    "loss_at_keep_db": 2.62,
+    "start_s": 195
+   },
+   {
+    "track": "SNR DWN_01",
+    "type": "sin altura",
+    "condition": "corte",
+    "a": "SNR DWN_01__original.wav",
+    "b": "SNR DWN_01__corte.wav",
+    "cutoff_hz": 20,
+    "order": 1,
+    "keep_hz": 20.3,
+    "active": false,
+    "loss_at_keep_db": 2.95,
+    "start_s": 183
+   },
+   {
+    "track": "SNR DWN_01",
+    "type": "sin altura",
+    "condition": "octava_arriba",
+    "a": "SNR DWN_01__original.wav",
+    "b": "SNR DWN_01__octava_arriba.wav",
+    "cutoff_hz": 40,
+    "order": 1,
+    "keep_hz": 20.3,
+    "active": false,
+    "loss_at_keep_db": 6.89,
+    "start_s": 183
+   },
+   {
+    "track": "OH_01.R",
+    "type": "sin altura",
+    "condition": "corte",
+    "a": "OH_01.R__original.wav",
+    "b": "OH_01.R__corte.wav",
+    "cutoff_hz": 50,
+    "order": 1,
+    "keep_hz": 56.1,
+    "active": false,
+    "loss_at_keep_db": 2.54,
+    "start_s": 184
+   },
+   {
+    "track": "OH_01.R",
+    "type": "sin altura",
+    "condition": "octava_arriba",
+    "a": "OH_01.R__original.wav",
+    "b": "OH_01.R__octava_arriba.wav",
+    "cutoff_hz": 100,
+    "order": 1,
+    "keep_hz": 56.1,
+    "active": false,
+    "loss_at_keep_db": 6.21,
+    "start_s": 184
+   },
+   {
+    "track": "HH_03",
+    "type": "sin altura",
+    "condition": "corte",
+    "a": "HH_03__original.wav",
+    "b": "HH_03__corte.wav",
+    "cutoff_hz": 56,
+    "order": 1,
+    "keep_hz": 61.6,
+    "active": false,
+    "loss_at_keep_db": 2.62,
+    "start_s": 184
+   },
+   {
+    "track": "HH_03",
+    "type": "sin altura",
+    "condition": "octava_arriba",
+    "a": "HH_03__original.wav",
+    "b": "HH_03__octava_arriba.wav",
+    "cutoff_hz": 112,
+    "order": 1,
+    "keep_hz": 61.6,
+    "active": false,
+    "loss_at_keep_db": 6.34,
+    "start_s": 184
+   },
+   {
+    "track": "TOM 2_01",
+    "type": "sin altura",
+    "condition": "corte",
+    "a": "TOM 2_01__original.wav",
+    "b": "TOM 2_01__corte.wav",
+    "cutoff_hz": 63,
+    "order": 1,
+    "keep_hz": 68.4,
+    "active": false,
+    "loss_at_keep_db": 2.67,
+    "start_s": 184
+   },
+   {
+    "track": "TOM 2_01",
+    "type": "sin altura",
+    "condition": "octava_arriba",
+    "a": "TOM 2_01__original.wav",
+    "b": "TOM 2_01__octava_arriba.wav",
+    "cutoff_hz": 126,
+    "order": 1,
+    "keep_hz": 68.4,
+    "active": false,
+    "loss_at_keep_db": 6.43,
+    "start_s": 184
+   },
+   {
+    "track": "ROOM_01",
+    "type": "sin altura",
+    "condition": "corte",
+    "a": "ROOM_01__original.wav",
+    "b": "ROOM_01__corte.wav",
+    "cutoff_hz": 100,
+    "order": 3,
+    "keep_hz": 107.2,
+    "active": true,
+    "loss_at_keep_db": 2.2,
+    "start_s": 184
+   },
+   {
+    "track": "ROOM_01",
+    "type": "sin altura",
+    "condition": "octava_arriba",
+    "a": "ROOM_01__original.wav",
+    "b": "ROOM_01__octava_arriba.wav",
+    "cutoff_hz": 200,
+    "order": 3,
+    "keep_hz": 107.2,
+    "active": true,
+    "loss_at_keep_db": 16.35,
+    "start_s": 184
+   }
+  ]
+ },
+ "answers": [
+  {
+   "track": "BASS 57A_01",
+   "type": "con altura",
+   "condition": "octava_arriba",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:34:32.413Z"
+  },
+  {
+   "track": "OH_01.R",
+   "type": "sin altura",
+   "condition": "octava_arriba",
+   "x_is": "a",
+   "answer": "a",
+   "correct": true,
+   "time": "2026-11-23T19:36:21.982Z"
+  },
+  {
+   "track": "SAX SM55_02.L",
+   "type": "con altura",
+   "condition": "octava_arriba",
+   "x_is": "b",
+   "answer": "a",
+   "correct": false,
+   "time": "2026-11-23T19:36:23.232Z"
+  },
+  {
+   "track": "GTR LINE_01",
+   "type": "con altura",
+   "condition": "corte",
+   "x_is": "a",
+   "answer": "a",
+   "correct": true,
+   "time": "2026-11-23T19:36:52.295Z"
+  },
+  {
+   "track": "HH_03",
+   "type": "sin altura",
+   "condition": "corte",
+   "x_is": "a",
+   "answer": "b",
+   "correct": false,
+   "time": "2026-11-23T19:37:39.458Z"
+  },
+  {
+   "track": "OH_01.R",
+   "type": "sin altura",
+   "condition": "corte",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:38:07.111Z"
+  },
+  {
+   "track": "GTR LINE_01",
+   "type": "con altura",
+   "condition": "octava_arriba",
+   "x_is": "a",
+   "answer": "a",
+   "correct": true,
+   "time": "2026-11-23T19:38:48.878Z"
+  },
+  {
+   "track": "GTR TLM170_01 L",
+   "type": "con altura",
+   "condition": "corte",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:39:23.920Z"
+  },
+  {
+   "track": "BASS OKTAVA_medioschido_01",
+   "type": "con altura",
+   "condition": "corte",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:39:52.245Z"
+  },
+  {
+   "track": "ROOM_01",
+   "type": "sin altura",
+   "condition": "corte",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:40:44.391Z"
+  },
+  {
+   "track": "ROOM_01",
+   "type": "sin altura",
+   "condition": "octava_arriba",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:40:55.033Z"
+  },
+  {
+   "track": "SNR DWN_01",
+   "type": "sin altura",
+   "condition": "corte",
+   "x_is": "b",
+   "answer": "a",
+   "correct": false,
+   "time": "2026-11-23T19:41:22.103Z"
+  },
+  {
+   "track": "BASS OKTAVA_medioschido_01",
+   "type": "con altura",
+   "condition": "octava_arriba",
+   "x_is": "a",
+   "answer": "b",
+   "correct": false,
+   "time": "2026-11-23T19:41:51.653Z"
+  },
+  {
+   "track": "GTR TLM170_01 L",
+   "type": "con altura",
+   "condition": "octava_arriba",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:42:19.536Z"
+  },
+  {
+   "track": "HH_03",
+   "type": "sin altura",
+   "condition": "octava_arriba",
+   "x_is": "a",
+   "answer": "a",
+   "correct": true,
+   "time": "2026-11-23T19:42:59.732Z"
+  },
+  {
+   "track": "SAX SM55_02.L",
+   "type": "con altura",
+   "condition": "corte",
+   "x_is": "b",
+   "answer": "b",
+   "correct": true,
+   "time": "2026-11-23T19:43:48.003Z"
+  },
+  {
+   "track": "TOM 2_01",
+   "type": "sin altura",
+   "condition": "corte",
+   "x_is": "a",
+   "answer": "a",
+   "correct": true,
+   "time": "2026-11-23T19:44:26.172Z"
+  },
+  {
+   "track": "TOM 2_01",
+   "type": "sin altura",
+   "condition": "octava_arriba",
+   "x_is": "b",
+   "answer": "a",
+   "correct": false,
+   "time": "2026-11-23T19:44:57.123Z"
+  },
+  {
+   "track": "BASS 57A_01",
+   "type": "con altura",
+   "condition": "corte",
+   "x_is": "a",
+   "answer": "a",
+   "correct": true,
+   "time": "2026-11-23T19:45:20.177Z"
+  },
+  {
+   "track": "SNR DWN_01",
+   "type": "sin altura",
+   "condition": "octava_arriba",
+   "x_is": "a",
+   "answer": "b",
+   "correct": false,
+   "time": "2026-11-23T19:46:11.532Z"
+  }
+ ],
+ "summary": [
+  {
+   "condition": "octava_arriba",
+   "type": "todos",
+   "correct": 6,
+   "trials": 10,
+   "p": 0.376953125
+  },
+  {
+   "condition": "octava_arriba",
+   "type": "con altura",
+   "correct": 3,
+   "trials": 5,
+   "p": 0.5
+  },
+  {
+   "condition": "octava_arriba",
+   "type": "sin altura",
+   "correct": 3,
+   "trials": 5,
+   "p": 0.5
+  },
+  {
+   "condition": "corte",
+   "type": "todos",
+   "correct": 8,
+   "trials": 10,
+   "p": 0.0546875
+  },
+  {
+   "condition": "corte",
+   "type": "con altura",
+   "correct": 5,
+   "trials": 5,
+   "p": 0.03125
+  },
+  {
+   "condition": "corte",
+   "type": "sin altura",
+   "correct": 3,
+   "trials": 5,
+   "p": 0.5
+  }
+ ],
+ "finished": "2026-11-23T19:48:05.856Z"
+}

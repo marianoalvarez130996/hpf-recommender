@@ -1,0 +1,218 @@
+{
+ "weak_fundamental": [
+  {
+   "fund_db": -20,
+   "re_h2_db": -14,
+   "f0": 41.2,
+   "fc": 20.0,
+   "loss_e1_db": 0.93
+  },
+  {
+   "fund_db": -25,
+   "re_h2_db": -19,
+   "f0": 41.2,
+   "fc": 20.0,
+   "loss_e1_db": 0.93
+  },
+  {
+   "fund_db": -30,
+   "re_h2_db": -24,
+   "f0": 41.2,
+   "fc": 20.0,
+   "loss_e1_db": 0.93
+  },
+  {
+   "fund_db": -35,
+   "re_h2_db": -29,
+   "f0": 82.4,
+   "fc": 40.0,
+   "loss_e1_db": 2.9
+  },
+  {
+   "fund_db": -40,
+   "re_h2_db": -34,
+   "f0": 82.4,
+   "fc": 40.0,
+   "loss_e1_db": 2.9
+  }
+ ],
+ "antiphase": [
+  {
+   "bass_db": -12,
+   "mono_fc": 20.0,
+   "stereo_fc": 20.0,
+   "stereo_keep": 41.2,
+   "stereo_loss_e1_db": 0.93
+  },
+  {
+   "bass_db": -6,
+   "mono_fc": 20.0,
+   "stereo_fc": 20.0,
+   "stereo_keep": 41.2,
+   "stereo_loss_e1_db": 0.93
+  },
+  {
+   "bass_db": 0,
+   "mono_fc": 20.0,
+   "stereo_fc": 20.0,
+   "stereo_keep": 41.2,
+   "stereo_loss_e1_db": 0.93
+  }
+ ],
+ "hum_k_above_4": [
+  {
+   "case": "B3 near 250 Hz (k=5)",
+   "f0": 277.2,
+   "fc": 140.0,
+   "loss_db": 1.21
+  },
+  {
+   "case": "F4 near 350 Hz (k=7)",
+   "f0": 391.9,
+   "fc": 180.0,
+   "loss_db": 1.02
+  }
+ ],
+ "short_low_note": [
+  {
+   "dur_ms": 100,
+   "f0": 82.4,
+   "loss_e1_db": 37.83
+  },
+  {
+   "dur_ms": 150,
+   "f0": 82.4,
+   "loss_e1_db": 37.83
+  },
+  {
+   "dur_ms": 200,
+   "f0": 41.2,
+   "loss_e1_db": 0.8
+  },
+  {
+   "dur_ms": 250,
+   "f0": 41.2,
+   "loss_e1_db": 0.8
+  },
+  {
+   "dur_ms": 300,
+   "f0": 41.2,
+   "loss_e1_db": 0.8
+  },
+  {
+   "dur_ms": 400,
+   "f0": 41.2,
+   "loss_e1_db": 0.8
+  }
+ ],
+ "sine_sub": [
+  {
+   "sub_hz": 45.0,
+   "sub_db": -18,
+   "above": "hi-hat noise 2-12 kHz",
+   "source": "espectro",
+   "fc": 280.0,
+   "order": 3,
+   "loss_sub_db": 47.64
+  },
+  {
+   "sub_hz": 45.0,
+   "sub_db": -18,
+   "above": "pad 220-880 Hz",
+   "source": "f0",
+   "fc": 160.0,
+   "order": 3,
+   "loss_sub_db": 33.06
+  },
+  {
+   "sub_hz": 45.0,
+   "sub_db": -12,
+   "above": "hi-hat noise 2-12 kHz",
+   "source": "espectro",
+   "fc": 280.0,
+   "order": 3,
+   "loss_sub_db": 47.64
+  },
+  {
+   "sub_hz": 45.0,
+   "sub_db": -12,
+   "above": "pad 220-880 Hz",
+   "source": "f0",
+   "fc": 160.0,
+   "order": 3,
+   "loss_sub_db": 33.06
+  },
+  {
+   "sub_hz": 45.0,
+   "sub_db": -6,
+   "above": "hi-hat noise 2-12 kHz",
+   "source": "espectro",
+   "fc": 25.0,
+   "order": 2,
+   "loss_sub_db": 0.4
+  },
+  {
+   "sub_hz": 45.0,
+   "sub_db": -6,
+   "above": "pad 220-880 Hz",
+   "source": "f0",
+   "fc": 160.0,
+   "order": 3,
+   "loss_sub_db": 33.06
+  },
+  {
+   "sub_hz": 55.0,
+   "sub_db": -18,
+   "above": "hi-hat noise 2-12 kHz",
+   "source": "espectro",
+   "fc": 280.0,
+   "order": 3,
+   "loss_sub_db": 42.41
+  },
+  {
+   "sub_hz": 55.0,
+   "sub_db": -18,
+   "above": "pad 220-880 Hz",
+   "source": "f0",
+   "fc": 180.0,
+   "order": 4,
+   "loss_sub_db": 41.19
+  },
+  {
+   "sub_hz": 55.0,
+   "sub_db": -12,
+   "above": "hi-hat noise 2-12 kHz",
+   "source": "espectro",
+   "fc": 31.5,
+   "order": 2,
+   "loss_sub_db": 0.45
+  },
+  {
+   "sub_hz": 55.0,
+   "sub_db": -12,
+   "above": "pad 220-880 Hz",
+   "source": "f0",
+   "fc": 180.0,
+   "order": 4,
+   "loss_sub_db": 41.19
+  },
+  {
+   "sub_hz": 55.0,
+   "sub_db": -6,
+   "above": "hi-hat noise 2-12 kHz",
+   "source": "espectro",
+   "fc": 31.5,
+   "order": 2,
+   "loss_sub_db": 0.45
+  },
+  {
+   "sub_hz": 55.0,
+   "sub_db": -6,
+   "above": "pad 220-880 Hz",
+   "source": "f0",
+   "fc": 180.0,
+   "order": 4,
+   "loss_sub_db": 41.19
+  }
+ ]
+}

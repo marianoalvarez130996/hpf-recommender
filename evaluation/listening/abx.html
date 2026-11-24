@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prueba ABX</title>
+<style>
+  :root { --ink: #1d1d1f; --muted: #6b6b70; --line: #d9d9de; --accent: #9a3412; --bg: #fafafa; }
+  body { font: 15px/1.45 -apple-system, "Helvetica Neue", Arial, sans-serif; color: var(--ink); background: var(--bg);
+         max-width: 720px; margin: 32px auto; padding: 0 16px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  p.note { color: var(--muted); margin: 4px 0 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 18px; margin-bottom: 16px; }
+  button { font: inherit; padding: 10px 18px; border-radius: 8px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
+  button.play { min-width: 90px; }
+  button.active { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  button.answer { background: var(--ink); color: #fff; border-color: var(--ink); }
+  button:disabled { opacity: .4; cursor: default; }
+  .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 10px 0; }
+  .progress { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  td.n { text-align: right; font-variant-numeric: tabular-nums; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<h1>Prueba ABX</h1>
+<p class="note">Elige la carpeta que generó prepare_abx.py (20 reactivos). En cada uno, A y B son dos versiones de la
+misma pista y X es una de las dos al azar. Escucha cuanto quieras (las teclas A, B y X cambian de versión en el mismo
+punto) y responde si X es A o B. No se muestra ningún resultado hasta el final.</p>
+
+<div class="card" id="setup">
+  <input type="file" id="folder" webkitdirectory multiple>
+  <p class="progress" id="loadStatus"></p>
+</div>
+
+<div class="card hidden" id="trial">
+  <div class="progress" id="progress"></div>
+  <div class="row">
+    <button class="play" data-v="a">A</button>
+    <button class="play" data-v="b">B</button>
+    <button class="play" data-v="x">X</button>
+    <button id="stop">Detener</button>
+  </div>
+  <div class="row">
+    <button class="answer" data-answer="a">X es A</button>
+    <button class="answer" data-answer="b">X es B</button>
+  </div>
+</div>
+
+<div class="card hidden" id="done">
+  <table id="groups"><thead><tr><th>Condición</th><th>Tipo</th><th class="n">Aciertos</th><th class="n">p</th></tr></thead><tbody></tbody></table>
+  <p class="note">p es la probabilidad de acertar al menos esas veces adivinando (binomial, una cola). Con 10
+  reactivos, 9 aciertos o más dan p &lt; 0.05 (8 de 10 da p = 0.055); por tipo hay solo 5 y sirven de descripción.</p>
+  <table id="items"><thead><tr><th>Pista</th><th>Tipo</th><th>Condición</th><th class="n">Acierto</th></tr></thead><tbody></tbody></table>
+  <div class="row"><button id="download">Descargar resultados (JSON)</button></div>
+</div>
+
+<script>
+const ctx = new AudioContext();
+let manifest, buffers = {}, plan = [], step = 0, answers = [];
+let source = null, playing = null, startedAt = 0, offset = 0;
+
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+function binomialP(k, n) {          // P(K >= k) con p = 0.5
+  let c = 1, total = 0;
+  for (let i = 0; i <= n; i++) { if (i >= k) total += c; c = c * (n - i) / (i + 1); }
+  return total / Math.pow(2, n);
+}
+
+document.getElementById("folder").addEventListener("change", async (e) => {
+  const files = Object.fromEntries([...e.target.files].map(f => [f.name, f]));
+  const status = document.getElementById("loadStatus");
+  if (!files["manifest.json"]) { status.textContent = "No encontré manifest.json en esa carpeta."; return; }
+  manifest = JSON.parse(await files["manifest.json"].text());
+  const names = [...new Set(manifest.comparisons.flatMap(c => [c.a, c.b]))];
+  for (const [i, name] of names.entries()) {
+    status.textContent = `Cargando audio ${i + 1} de ${names.length}...`;
+    buffers[name] = await ctx.decodeAudioData(await files[name].arrayBuffer());
+  }
+  const n = manifest.trials_per_comparison;
+  manifest.comparisons.forEach((c, ci) => { for (let t = 0; t < n; t++) plan.push({ ci, x: Math.random() < 0.5 ? "a" : "b" }); });
+  shuffle(plan);
+  document.getElementById("setup").classList.add("hidden");
+  document.getElementById("trial").classList.remove("hidden");
+  showTrial();
+});
+
+function currentFile(v) {
+  const p = plan[step], c = manifest.comparisons[p.ci];
+  return v === "x" ? c[p.x] : c[v];
+}
+
+function play(v) {
+  if (ctx.state === "suspended") ctx.resume();   // el navegador solo deja sonar audio tras un clic
+  const position = playing ? (offset + ctx.currentTime - startedAt) : 0;
+  stopSource();
+  const buffer = buffers[currentFile(v)];
+  source = ctx.createBufferSource();
+  source.buffer = buffer;
+  source.loop = true;
+  source.connect(ctx.destination);
+  offset = position % buffer.duration;
+  startedAt = ctx.currentTime;
+  source.start(0, offset);
+  playing = v;
+  document.querySelectorAll("button.play").forEach(b => b.classList.toggle("active", b.dataset.v === v));
+}
+
+function stopSource() { if (source) { source.stop(); source.disconnect(); source = null; } }
+
+function stop() {
+  stopSource(); playing = null; offset = 0;
+  document.querySelectorAll("button.play").forEach(b => b.classList.remove("active"));
+}
+
+function showTrial() {
+  document.getElementById("progress").textContent = `Ensayo ${step + 1} de ${plan.length}`;
+}
+
+function answer(v) {
+  const p = plan[step], c = manifest.comparisons[p.ci];
+  answers.push({ track: c.track, type: c.type, condition: c.condition, x_is: p.x, answer: v, correct: v === p.x,
+                 time: new Date().toISOString() });
+  stop();
+  step += 1;
+  if (step < plan.length) { showTrial(); return; }
+  document.getElementById("trial").classList.add("hidden");
+  showResults();
+}
+
+function score(list) {
+  const k = list.filter(a => a.correct).length;
+  return { correct: k, trials: list.length, p: binomialP(k, list.length) };
+}
+
+function summary() {           // por condición, y por condición y tipo
+  const groups = [];
+  for (const condition of [...new Set(answers.map(a => a.condition))]) {
+    const mine = answers.filter(a => a.condition === condition);
+    groups.push({ condition, type: "todos", ...score(mine) });
+    for (const type of [...new Set(mine.map(a => a.type))])
+      groups.push({ condition, type, ...score(mine.filter(a => a.type === type)) });
+  }
+  return groups;
+}
+
+function addRow(table, cells) {
+  const tr = document.createElement("tr");
+  tr.innerHTML = cells.map(([text, cls]) => `<td${cls ? ` class="${cls}"` : ""}>${text}</td>`).join("");
+  document.querySelector(`#${table} tbody`).appendChild(tr);
+}
+
+function showResults() {
+  for (const g of summary())
+    addRow("groups", [[g.condition], [g.type], [`${g.correct} / ${g.trials}`, "n"], [g.p.toFixed(3), "n"]]);
+  for (const a of answers)
+    addRow("items", [[a.track], [a.type], [a.condition], [a.correct ? "sí" : "no", "n"]]);
+  document.getElementById("done").classList.remove("hidden");
+}
+
+document.querySelectorAll("button.play").forEach(b => b.addEventListener("click", () => play(b.dataset.v)));
+document.querySelectorAll("button.answer").forEach(b => b.addEventListener("click", () => answer(b.dataset.answer)));
+document.getElementById("stop").addEventListener("click", stop);
+document.addEventListener("keydown", (e) => {
+  if (document.getElementById("trial").classList.contains("hidden")) return;
+  const k = e.key.toLowerCase();
+  if (k === "a" || k === "b" || k === "x") play(k);
+  if (k === " ") { e.preventDefault(); stop(); }
+});
+document.getElementById("download").addEventListener("click", () => {
+  const data = { manifest, answers, summary: summary(), finished: new Date().toISOString() };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 1)], { type: "application/json" }));
+  const link = Object.assign(document.createElement("a"), { href: url, download: "abx_resultados.json" });
+  link.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
