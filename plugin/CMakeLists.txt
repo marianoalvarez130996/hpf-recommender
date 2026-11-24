@@ -17,6 +17,8 @@ endif()
 
 add_subdirectory("${JUCE_DIR}" JUCE)
 add_subdirectory("${HPF_CORE_DIR}" hpf_core)   # también compila sus pruebas, que ctest corre
+# el núcleo estático va dentro de un módulo compartido (VST3 en Linux): necesita código independiente de la posición
+set_target_properties(hpf PROPERTIES POSITION_INDEPENDENT_CODE ON)
 
 juce_add_plugin(HPFRecommender
     COMPANY_NAME "Atonal"
